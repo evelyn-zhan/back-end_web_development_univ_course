@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <title></title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Perhitungan Nilai Akhir Mahasiswa</h1>
+            <p>Nilai Akhir = 30% Nilai UTS + 40% Nilai Tugas + 30% Nilai UAS</p>
+
+            <table>
+                <tr>
+                    <td>Nilai UTS</td>
+                    <td><input type="text" id="uts" class="input-nilai" autocomplete="off"></td>
+                </tr>
+
+                <tr>
+                    <td>Nilai Tugas</td>
+                        <td><input type="text" id="tugas" class="input-nilai" autocomplete="off"></td>
+                </tr>
+
+                <tr>
+                    <td>Nilai UAS</td>
+                    <td><input type="text" id="uas" class="input-nilai" autocomplete="off"></td>
+                </tr>
+
+                <tr>
+                    <td>Nilai Huruf</td>
+                    <td><span class="nilai-huruf">?</span></td>
+                </tr>
+            </table>
+
+            <button class="button">Hitung Nilai Huruf</button>
+        </div>
+    </body>
+
+    <script type="text/javascript" src="index.js"></script>
+</html>

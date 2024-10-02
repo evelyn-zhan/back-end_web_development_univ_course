@@ -12,3 +12,7 @@
     align-items: center;
     gap: 1rem;
 }
+
+#loading {
+    font-size: 1.3rem;
+}

@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+body {
+    background-color: #E9E9E9;
+}
+
+.container {
+    padding: 3rem 5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    width: 300px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.table-header {
+    border-bottom: solid 3px black;
+    font-size: 1.2rem;
+}
+
+td {
+    border-bottom: solid 1px #A9A9A9;
+}
+
+.image {
+    width: 180px;
+    height: 100px;
+}

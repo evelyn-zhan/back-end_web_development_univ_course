@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+header {
+    padding: 1rem 5rem;
+
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    background-color: black;
+    color: white;
+}
+
+header .logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #A9A9A9;
+
+    transition: all .3s;
+}
+
+nav .active {
+    font-weight: 700;
+    color: white;
+}
+
+nav a:hover {
+    color: white;
+}
+
+main {
+    padding: 4.5rem 5rem;
+}
+
+.home {
+    background-color: #F9F9F9;
+}
+
+.about {
+    height: 80vh;
+
+    padding: 4rem 25rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+
+    background-color: #222222;
+    color: white;
+
+    text-align: center;
+}
+
+.detail {
+    padding: 4.5rem 8rem;
+
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+
+    background-color: #F9F9F9;
+}
+
+.products {
+    margin-top: 2rem;
+    padding-left: 25rem;
+
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.products a {
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    border: solid 2px #E9E9E9;
+    border-radius: 5px;
+}
+
+.card-description {
+    width: 100%;
+
+    padding: 1.2rem 1.5rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: .3rem;
+
+    background-color: white;
+}
+
+.original-price {
+    color: #888888;
+}
+
+button {
+    padding: .2rem .5rem;
+
+    cursor: pointer;
+
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+
+    border: solid 1.5px black;
+    border-radius: 5px;
+}
+
+.add-button {
+    margin-top: 2rem;
+}
+
+.detail-description {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .5rem;
+
+    text-align: justify;
+}
+
+.detail-description p {
+    margin-top: 2rem;
+}
+
+.quantity-and-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.quantity {
+    padding: .2rem 1rem;
+
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+
+    border: solid 1.5px #A9A9A9;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 1.5rem 5rem;
+
+    background-color: black;
+    color: white;
+
+    text-align: center;
+}

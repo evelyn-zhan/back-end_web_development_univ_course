@@ -5,7 +5,7 @@ const app = express()
 const conn = mysql2.createConnection({
     host: '127.0.0.1',
     user: 'root',
-    password: 'Kidzilla01',
+    password: '',
     database: 'store_db'
 })
 const host = '127.0.0.1'

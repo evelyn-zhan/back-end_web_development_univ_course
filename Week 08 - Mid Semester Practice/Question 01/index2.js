@@ -10,14 +10,15 @@ const app = express()
 const hostname = '127.0.0.1'
 const port = 3001
 
-app.use(express.static(path.join(__dirname, '../public')))
+// app.use(express.static(path.join(__dirname, '/public')))
+// app.use(express.static('public'))
 
 app.get('/', (req, res) => {
     res.send('Hello')
 })
 
 app.get('/data', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/archive.json'))
+    res.sendFile(path.join(__dirname, '/public/archive.json'))
 })
 
 app.get('/suhu-melebihi/:temperature', (req, res) => {
@@ -56,7 +57,7 @@ app.listen(port, () => {
     console.log(`Server running at http://${hostname}:${port}/`)
 })
 
-const data = JSON.parse(fs.readFileSync('../public/archive.json', 'utf-8'))
+const data = JSON.parse(fs.readFileSync('./public/archive.json', 'utf-8'))
 
 let minTemp = Infinity
 let minTime = ''

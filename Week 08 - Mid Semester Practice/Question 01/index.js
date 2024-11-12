@@ -1,10 +1,12 @@
-const http = require('http')
-const fs = require('fs')
+// const http = require('http')
+// const fs = require('fs')
+import http from 'http'
+import fs from 'fs'
 
 const hostname = '127.0.0.1'
 const port = 3001
 
-const data = JSON.parse(fs.readFileSync('../public/archive.json', 'utf-8'))
+const data = JSON.parse(fs.readFileSync('./public/archive.json', 'utf-8'))
 
 let minTemp = Infinity
 let minTime = ''

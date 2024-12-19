@@ -43,7 +43,7 @@ app.get('/api/products', (req, res) => {
     })
 })
 
-app.get('/api/products/:id', (req, res) => {
+app.get('/api/product/:id', (req, res) => {
     const { id } = req.params
     let sql = `SELECT * FROM product WHERE product_id = ${id};`
     db.query(sql, (err, result) => {
@@ -70,7 +70,7 @@ app.post('/api/products', (req, res) => {
     })
 })
 
-app.put('/api/products/:id', (req, res) => {
+app.put('/api/product/:id', (req, res) => {
     const { id } = req.params
     const { product_name, product_price } = req.body
     let sql = `UPDATE product SET product_name = '${product_name}', product_price = ${product_price} WHERE product_id = ${id};`
@@ -84,7 +84,7 @@ app.put('/api/products/:id', (req, res) => {
     })
 })
 
-app.delete('/api/products/:id', (req, res) => {
+app.delete('/api/product/:id', (req, res) => {
     const { id } = req.params
     let sql = `DELETE FROM product WHERE product_id = ${id};`
     db.query(sql, (err, result) => {

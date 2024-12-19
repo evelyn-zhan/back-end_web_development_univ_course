@@ -57,7 +57,7 @@ export default {
 
         async deleteProduct(id) {
             try {
-                await axios.delete(`http://localhost:3000/api/products/${id}`)
+                await axios.delete(`http://localhost:3000/api/product/${id}`)
                 this.getProducts()
             } catch (error) {
                 console.log(error)
